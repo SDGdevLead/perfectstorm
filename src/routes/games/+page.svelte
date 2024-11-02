@@ -22,7 +22,7 @@
 </script>
 
 <div class="p-8">
-  <p class="text-6xl font-bold text-center">
+  <p class="text-3xl md:text-5xl lg:text-6xl font-bold text-center">
     More details to come closer to Tournament date
   </p>
 </div>

@@ -19,6 +19,12 @@
   import kof from "$lib/assets/games/top_koflogo.png";
   import umvc from "$lib/assets/games/umvc3.png";
   import vsav from "$lib/assets/games/vsav.png";
+
+  import ttt from "$lib/assets/org/TorontoTopTiers_Logo.png";
+  import bc from "$lib/assets/org/battle_city_logo_-_blue_with_white_bg_50.png";
+  import dtr from "$lib/assets/org/dtr_logo_rb.png";
+  import ecfb from "$lib/assets/org/ecfblogo.png";
+  import kizu from "$lib/assets/org/kizuna_transparent.png";
 </script>
 
 <div>
@@ -26,6 +32,12 @@
     <p class="gradient-heading">February 12-13, 2025</p>
 
     <p class="gradient-slice">Ottawa Marriot: 100 Kent St</p>
+  </div>
+
+  <div
+    class="rounded-container-token drop-shadow-2xl opacity-85 bg-surface-800 text-center p-8 text-3xl md:text-5xl lg:text-8xl"
+  >
+    <p class="">Weather the storm in our first organized event!</p>
   </div>
 
   <div></div>
@@ -172,6 +184,53 @@
         <img
           class="object-contain object-center w-full h-40 max-w-full rounded-lg drop-shadow-2xl"
           src={vsav}
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="bg-surface-800 opacity-85 rounded-container-token text-center p-8 text-3xl md:text-5xl lg:text-8xl"
+  >
+    <p class="">Supporters</p>
+  </div>
+  <div class="relative">
+    <!-- Gallery items -->
+    <div
+      class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-5 p-8 drop-shadow-2xl"
+    >
+      <div>
+        <img
+          class="object-contain object-center w-full h-40 max-w-full rounded-lg drop-shadow-2xl"
+          src={ttt}
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="object-contain object-center w-full h-40 max-w-full rounded-lg drop-shadow-2xl"
+          src={bc}
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="object-contain object-center w-full h-40 max-w-full rounded-lg drop-shadow-2xl"
+          src={dtr}
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="object-contain object-center w-full h-40 max-w-full rounded-lg drop-shadow-2xl"
+          src={ecfb}
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="object-contain object-center w-full h-40 max-w-full rounded-lg drop-shadow-2xl contrast-50"
+          src={kizu}
           alt=""
         />
       </div>
