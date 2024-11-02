@@ -21,16 +21,17 @@
   import vsav from "$lib/assets/games/vsav.png";
 </script>
 
-<div>
-  <div class="text-center p-8 text-8xl">
-    <p class="gradient-heading">February 12-13, 2025</p>
+<div class="p-8">
+  <p class="text-6xl font-bold text-center">
+    More details to come closer to Tournament date
+  </p>
+</div>
 
-    <p class="gradient-slice">Ottawa Marriot: 100 Kent St</p>
-  </div>
-
-  <div></div>
+<div class="justify-center">
   <!-- Gallery -->
-  <div class="relative">
+  <div
+    class="relative flex items-center justify-center rounded-container-token mt-8"
+  >
     <!-- Gallery items -->
     <div
       class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4 p-8 drop-shadow-2xl"
