@@ -15,7 +15,7 @@
   storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
 
-<div class="relative p-24">
+<div class="relative pt-24 md:px-12">
   <Navbar />
 
   <slot />

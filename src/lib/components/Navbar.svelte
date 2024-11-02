@@ -9,7 +9,7 @@
   >
     <a href="/" class="hover:text-primary-900">PF Logo</a>
     <div
-      class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse p-2 variant-soft-surface hover:variant-soft-primary"
+      class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse p-2 items-center"
     >
       <a href="/signup">Sign Up</a>
       <button
@@ -42,7 +42,7 @@
       id="navbar-sticky"
     >
       <ul
-        class="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+        class="flex flex-col p-4 md:p-0 mt-4 font-bold text-2xl border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
       >
         <li>
           <a href="/activities" class="block py-2 px-3 rounded">Events</a>
@@ -57,9 +57,7 @@
           <a href="/venue" class="block py-2 px-3 rounded">Venue</a>
         </li>
         <li>
-          <a href="/applications" class="block py-2 px-3 rounded"
-            >Applications</a
-          >
+          <a href="/applications" class="block py-2 px-3 rounded">Contact</a>
         </li>
       </ul>
     </div>
