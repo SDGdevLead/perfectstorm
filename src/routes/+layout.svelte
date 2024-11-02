@@ -36,7 +36,7 @@
               </svg>
             </span>
           </button>
-          <a class="btn btn-md variant-glass-primary" href="/"
+          <a class="hidden sm:flex btn btn-md variant-glass-primary" href="/"
             ><strong class="text-xl uppercase">Perfect Storm</strong></a
           >
         </div></svelte:fragment

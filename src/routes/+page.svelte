@@ -22,7 +22,7 @@
 </script>
 
 <div>
-  <div class="text-center p-8 text-8xl">
+  <div class="text-center p-8 text-3xl md:text-5xl lg:text-8xl">
     <p class="gradient-heading">February 12-13, 2025</p>
 
     <p class="gradient-slice">Ottawa Marriot: 100 Kent St</p>
