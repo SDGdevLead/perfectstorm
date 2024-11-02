@@ -23,13 +23,6 @@
 
 <head> </head>
 
-<div
-  class="bg-surface-800 p-8 flex flex-col items-center justify-center text-6xl opacity-85"
->
-  <p class="gradient-heading">Seven Golden Letters</p>
-  <p class="gradient-slice">One Weekend</p>
-</div>
-
 <!-- Gallery -->
 <div
   class="relative flex items-center justify-center bg-surface-800 opacity-85 rounded-container-token mt-8"
