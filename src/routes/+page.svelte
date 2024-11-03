@@ -28,14 +28,15 @@
 </script>
 
 <div>
-  <div class="text-center p-8 text-3xl md:text-5xl lg:text-8xl">
+  <div class="text-center p-8 py-16 text-3xl md:text-5xl lg:text-8xl">
+    <p class="gradient-slice">Marriot Hotel</p>
     <p class="gradient-heading">February 12-13, 2025</p>
 
-    <p class="gradient-slice">Ottawa Marriot: 100 Kent St</p>
+    <p class="gradient-slice">100 Kent St, Ottawa Ontario</p>
   </div>
 
   <div
-    class="rounded-container-token drop-shadow-2xl opacity-85 bg-surface-800 text-center p-8 text-3xl md:text-5xl lg:text-8xl"
+    class="rounded-container-token drop-shadow-2xl opacity-85 variant-glass-surface text-center p-8 py-16 text-3xl md:text-5xl lg:text-8xl"
   >
     <p class="">Weather the storm in our first organized event!</p>
   </div>
@@ -190,7 +191,7 @@
     </div>
   </div>
   <div
-    class="bg-surface-800 opacity-85 rounded-container-token text-center p-8 text-3xl md:text-5xl lg:text-8xl"
+    class="variant-glass-surface opacity-85 rounded-container-token text-center p-8 text-3xl md:text-5xl lg:text-8xl"
   >
     <p class="">Supporters</p>
   </div>

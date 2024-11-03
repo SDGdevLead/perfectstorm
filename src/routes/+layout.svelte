@@ -25,7 +25,7 @@
 <AppShell>
   <svelte:fragment slot="header">
     <!-- App Bar -->
-    <AppBar>
+    <AppBar shadow="drop-shadow-2xl" background="variant-glass-surface">
       <svelte:fragment slot="lead">
         <div class="">
           <button class="lg:hidden btn btn-sm mr-4" on:click={drawerOpen}>
@@ -46,7 +46,7 @@
       <svelte:fragment slot="default">
         <nav class="list-nav">
           <ul
-            class="hidden lg:flex flex-wrap justify-center items-center text-4xl"
+            class="hidden lg:flex flex-wrap justify-center items-center text-6xl"
           >
             <li class="hidden"></li>
             <li class=""><a href="/events">Events</a></li>
@@ -59,7 +59,7 @@
       </svelte:fragment>
       <svelte:fragment slot="trail">
         <a
-          class="btn btn-sm variant-glass-secondary text-4xl mr-6"
+          class="btn btn-lg variant-glass-secondary text-4xl mr-8"
           href="https://www.start.gg/tournament/perfect-storm-2025"
           target="_blank"
           rel="noreferrer"
