@@ -25,216 +25,54 @@
   import dtr from "$lib/assets/org/dtr_logo_rb.png";
   import ecfb from "$lib/assets/org/ecfblogo.png";
   import kizu from "$lib/assets/org/kizuna_transparent.png";
+
+  import banner from "$lib/assets/images/thinbanner.png";
 </script>
 
-<div>
-  <div class="text-center p-8 py-16 text-3xl md:text-5xl lg:text-8xl">
-    <p class="gradient-slice">Marriot Hotel</p>
-    <p class="gradient-heading">February 12-13, 2025</p>
-
-    <p class="gradient-slice">100 Kent St, Ottawa Ontario</p>
+<div class="space-y-12">
+  <div class="text-center space-y-4">
+    <p class="gradient-slice text-3xl md:text-4xl lg:text-5xl underline">Marriot Hotel</p>
+    <p class="text-xl md:text-2xl lg:text-3xl font-bold">February 12-13, 2025</p>
+    <p class="text-xl md:text-2xl lg:text-3xl">100 Kent St, Ottawa Ontario</p>
   </div>
 
-  <div
-    class="rounded-container-token drop-shadow-2xl opacity-85 variant-glass-surface text-center p-8 py-16 text-3xl md:text-5xl lg:text-8xl"
-  >
-    <p class="">Weather the storm in our first organized event!</p>
-  </div>
-
-  <div></div>
-  <!-- Gallery -->
-  <div class="relative">
-    <!-- Gallery items -->
-    <div
-      class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4 p-8 drop-shadow-2xl"
-    >
-      <div>
-        <img
-          class="object-contain object-center w-full h-40 max-w-full rounded-lg drop-shadow-2xl"
-          src={tekken}
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="object-contain object-center w-full h-40 max-w-full rounded-lg drop-shadow-2xl"
-          src={bbct}
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="object-contain object-center w-full h-40 max-w-full rounded-lg drop-shadow-2xl scale-75"
-          src={ggst}
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="object-contain object-center w-full h-40 max-w-full rounded-lg drop-shadow-2xl"
-          src={ggxrd}
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="object-contain object-center w-full h-40 max-w-full rounded-lg drop-shadow-2xl"
-          src={ggxx}
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="object-contain object-center w-full h-40 max-w-full rounded-lg drop-shadow-2xl"
-          src={melee}
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="object-contain object-center w-full h-40 max-w-full rounded-lg drop-shadow-2xl"
-          src={p4u}
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="object-contain object-center w-full h-40 max-w-full rounded-lg drop-shadow-2xl"
-          src={scvi}
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="object-contain object-center w-full h-40 max-w-full rounded-lg drop-shadow-2xl"
-          src={sf3}
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="object-contain object-center w-full h-40 max-w-full rounded-lg drop-shadow-2xl"
-          src={sf6}
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="object-contain object-center w-full h-40 max-w-full rounded-lg drop-shadow-2xl"
-          src={uni2}
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="object-contain object-center w-full h-40 max-w-full rounded-lg drop-shadow-2xl"
-          src={abkaa}
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="object-contain object-center w-full h-40 max-w-full rounded-lg drop-shadow-2xl"
-          src={bbcf}
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="object-contain object-center w-full h-40 max-w-full rounded-lg drop-shadow-2xl"
-          src={dbfz}
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="object-contain object-center w-full h-40 max-w-full rounded-lg drop-shadow-2xl"
-          src={gbvsr}
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="object-contain object-center w-full h-40 max-w-full rounded-lg drop-shadow-2xl"
-          src={mbaacc}
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="object-contain object-center w-full h-40 max-w-full rounded-lg drop-shadow-2xl"
-          src={mbtl}
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="object-contain object-center w-full h-40 max-w-full rounded-lg drop-shadow-2xl"
-          src={kof}
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="object-contain object-center w-full h-40 max-w-full rounded-lg drop-shadow-2xl"
-          src={umvc}
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="object-contain object-center w-full h-40 max-w-full rounded-lg drop-shadow-2xl"
-          src={vsav}
-          alt=""
-        />
-      </div>
+  <div class="container mx-auto px-4 md:px-6 lg:px-8">
+    <div class="rounded-container-token drop-shadow-2xl opacity-85 variant-glass-surface text-center p-6 md:p-8 lg:p-12">
+      <p class="text-2xl md:text-4xl lg:text-6xl font-bold">Weather the storm in our first organized event!</p>
     </div>
   </div>
-  <div
-    class="variant-glass-surface opacity-85 rounded-container-token text-center p-8 text-3xl md:text-5xl lg:text-8xl"
-  >
-    <p class="">Supporters</p>
+
+  <!-- Games Gallery -->
+  <div class="container mx-auto px-4 md:px-6 lg:px-8">
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6 lg:gap-8">
+      {#each [tekken, bbct, ggst, ggxrd, ggxx, melee, p4u, scvi, sf3, sf6, uni2, abkaa, bbcf, dbfz, gbvsr, mbaacc, mbtl, kof, umvc, vsav] as game}
+        <div class="group">
+          <img
+            class="object-contain object-center w-full h-32 md:h-40 lg:h-48 max-w-full rounded-lg drop-shadow-2xl transition-transform duration-300 group-hover:scale-105"
+            src={game}
+            alt="Game logo"
+          />
+        </div>
+      {/each}
+    </div>
   </div>
-  <div class="relative">
-    <!-- Gallery items -->
-    <div
-      class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-5 p-8 drop-shadow-2xl"
-    >
-      <div>
-        <img
-          class="object-contain object-center w-full h-40 max-w-full rounded-lg drop-shadow-2xl"
-          src={ttt}
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="object-contain object-center w-full h-40 max-w-full rounded-lg drop-shadow-2xl"
-          src={bc}
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="object-contain object-center w-full h-40 max-w-full rounded-lg drop-shadow-2xl"
-          src={dtr}
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="object-contain object-center w-full h-40 max-w-full rounded-lg drop-shadow-2xl"
-          src={ecfb}
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="object-contain object-center w-full h-40 max-w-full rounded-lg drop-shadow-2xl contrast-50"
-          src={kizu}
-          alt=""
-        />
-      </div>
+
+  <!-- Supporters Section -->
+  <div class="container mx-auto px-4 md:px-6 lg:px-8 ">
+    <div class="variant-glass-surface opacity-85 rounded-container-token text-center p-6 md:p-8 lg:p-12 mb-8">
+      <p class="text-2xl md:text-4xl lg:text-6xl font-bold">Supporters</p>
+    </div>
+    
+    <div class="flex flex-wrap justify-center gap-4 md:gap-6 lg:gap-8">
+      {#each [ttt, bc, dtr, ecfb, kizu] as supporter}
+        <div class="group w-[45%] sm:w-[30%] md:w-[22%] lg:w-[18%]">
+          <img
+            class="object-contain object-center w-full h-32 md:h-40 lg:h-48 max-w-full rounded-lg drop-shadow-2xl transition-transform duration-300 group-hover:scale-105"
+            src={supporter}
+            alt="Supporter logo"
+          />
+        </div>
+      {/each}
     </div>
   </div>
 </div>

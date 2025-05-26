@@ -1,12 +1,12 @@
 <script lang="ts">
   import "../app.postcss";
-  import { AppShell, AppBar } from "@skeletonlabs/skeleton";
+  import { Drawer, getDrawerStore } from "@skeletonlabs/skeleton";
   import Navigation from "$lib/components/Navigation.svelte";
   import logo from "$lib/assets/logo.png";
+  import banner from "$lib/assets/images/thinbanner.png";
+
   import {
     initializeStores,
-    Drawer,
-    getDrawerStore,
   } from "@skeletonlabs/skeleton";
 
   initializeStores();
@@ -18,59 +18,63 @@
   }
 </script>
 
+<svelte:head>
+  <style>
+    html, body {
+      height: 100%;
+      overflow-y: auto;
+    }
+  </style>
+</svelte:head>
+
 <Drawer>
   <Navigation />
 </Drawer>
-<!-- App Shell -->
-<AppShell>
-  <svelte:fragment slot="header">
-    <!-- App Bar -->
-    <AppBar shadow="drop-shadow-2xl" background="variant-glass-surface">
-      <svelte:fragment slot="lead">
-        <div class="">
-          <button class="lg:hidden btn btn-sm mr-4" on:click={drawerOpen}>
-            <span>
-              <svg viewBox="0 0 100 80" class="fill-token w-4 h-4">
-                <rect width="100" height="20" />
-                <rect y="30" width="100" height="20" />
-                <rect y="60" width="100" height="20" />
-              </svg>
-            </span>
-          </button>
-          <!-- <a class="hidden sm:flex btn btn-md variant-glass-primary" href="/" -->
-          <!--   ><strong class="text-xl uppercase">Perfect Storm</strong></a -->
-          <!-- > -->
-          <a class="hidden sm:flex" href="/"><img src={logo} alt="pflogo" /></a>
-        </div></svelte:fragment
-      >
-      <svelte:fragment slot="default">
-        <nav class="list-nav">
-          <ul
-            class="hidden lg:flex flex-wrap justify-center items-center text-6xl"
-          >
-            <li class="hidden"></li>
-            <li class=""><a href="/events">Events</a></li>
-            <li class=""><a href="/games">Games</a></li>
-            <li class=""><a href="/schedule">Schedule</a></li>
-            <li class=""><a href="/venue">Venue</a></li>
-            <li class=""><a href="/contact">Contact</a></li>
-          </ul>
-        </nav>
-      </svelte:fragment>
-      <svelte:fragment slot="trail">
-        <a
-          class="btn btn-lg variant-glass-secondary text-4xl mr-8"
-          href="https://www.start.gg/tournament/perfect-storm-2025"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Sign Up
+
+<header class="bg-gradient-to-r from-surface-800 to-primary-900 via-tertiary-900 shadow-2xl">
+  <nav class="container mx-auto px-4 py-4">
+    <div class="flex items-center justify-between">
+      <!-- Mobile menu button -->
+      <div class="flex items-center">
+        <button class="lg:hidden btn btn-sm mr-4 hover:variant-soft-primary transition-colors" on:click={drawerOpen}>
+          <span>
+            <svg viewBox="0 0 100 80" class="fill-token w-4 h-4">
+              <rect width="100" height="20" />
+              <rect y="30" width="100" height="20" />
+              <rect y="60" width="100" height="20" />
+            </svg>
+          </span>
+        </button>
+        <a href="/" class="flex items-center">
+          <img src={logo} alt="Perfect Storm Logo" class="h-12 md:h-28 w-auto" />
         </a>
-      </svelte:fragment>
-    </AppBar>
-  </svelte:fragment>
-  <!-- Page Route Content -->
-  <div class="pt-4">
+      </div>
+
+      <!-- Desktop Navigation -->
+      <ul class="hidden lg:flex flex-wrap justify-center items-center gap-8 text-2xl md:text-3xl">
+        <li><a href="/events" class="hover:text-primary-200 transition-colors">Events</a></li>
+        <li><a href="/games" class="hover:text-primary-200 transition-colors">Games</a></li>
+        <li><a href="/schedule" class="hover:text-primary-200 transition-colors">Schedule</a></li>
+        <li><a href="/venue" class="hover:text-primary-200 transition-colors">Venue</a></li>
+        <li><a href="/contact" class="hover:text-primary-200 transition-colors">Contact</a></li>
+      </ul>
+
+      <!-- Sign Up Button -->
+      <a
+        class="btn btn-lg variant-glass text-xl md:text-2xl lg:text-3xl hover:variant-soft-secondary transition-all"
+        href="https://www.start.gg/tournament/perfect-storm-2025"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Sign Up
+      </a>
+    </div>
+  </nav>
+</header>
+
+<div class="flex flex-col min-h-screen">
+  <!-- Main Content -->
+  <main class="flex-1 container mx-auto px-4 md:px-6 lg:px-8 py-8">
     <slot />
-  </div>
-</AppShell>
+  </main>
+</div>
